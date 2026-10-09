@@ -8,19 +8,19 @@
 
 ## Completion status
 
-All five required Activity 8 challenges were accepted on HackerRank. The public profile displays the **3-star Problem Solving badge**. After additional warm-up submissions, the verified score was **205/475**; HackerRank confirmed the third star had been earned.
+All five required Activity 8 challenges were accepted by HackerRank's full judge. The Problem Solving profile earned the **3-star badge**. The verified profile score after badge-building warm-ups was **205/475**; HackerRank's award dialog confirmed the third star had been earned.
 
 ## Required solutions
 
-| HackerRank problem | Source file | Approach | Time | Auxiliary space |
-|---|---|---|---|---|
-| [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) | `Diagonal-Difference/diagonal_difference.py` | Read one row at a time and update both diagonal sums. | O(n²) for matrix input | O(n) row buffer; O(1) accumulator state |
-| [Dynamic Array](https://www.hackerrank.com/challenges/dynamic-array/problem) | `Dynamic-Array/dynamic_array.py` | XOR-derived sequence index; append or indexed query. | O(n + q) | O(n + q), including sequences, parsed queries, and buffered answers |
-| [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem) | `Time-Conversion/time_conversion.py` | Convert AM/PM explicitly, handling 12 AM and 12 PM. | O(1) | O(1) |
-| [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem) | `Compare-the-Triplets/compare_the_triplets.py` | Compare three corresponding scores and count wins. | O(1) for fixed-size input | O(1) |
-| [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays/problem) | `Sparse-Arrays/sparse_arrays.py` | Build a frequency map once, then answer queries by lookup. | O(n + q), expected | O(u + q): frequency map plus buffered output, where u is the number of unique strings |
+| Challenge | Source file | Approach | Time | Auxiliary space | Result |
+|---|---|---|---|---|---|
+| [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) | `Diagonal-Difference/diagonal_difference.py` | Read one row at a time and update both diagonal sums. | O(n²) for matrix input | O(n) row buffer; O(1) accumulator state | [Accepted · 10 points](https://www.hackerrank.com/challenges/diagonal-difference/submissions/code/484773062) |
+| [Dynamic Array](https://www.hackerrank.com/challenges/dynamic-array/problem) | `Dynamic-Array/dynamic_array.py` | XOR-derived sequence index; append or indexed query. | O(n + q) | O(n + q), including sequences, parsed queries, and buffered answers | [Accepted · 15 points](https://www.hackerrank.com/challenges/dynamic-array/submissions/code/484772887) |
+| [Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem) | `Time-Conversion/time_conversion.py` | Convert AM/PM explicitly, handling 12 AM and 12 PM. | O(1) | O(1) | [Accepted · 15 points](https://www.hackerrank.com/challenges/time-conversion/submissions/code/484772739) |
+| [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem) | `Compare-the-Triplets/compare_the_triplets.py` | Compare three corresponding scores and count wins. | O(1) for fixed-size input | O(1) | [Accepted · 10 points](https://www.hackerrank.com/challenges/compare-the-triplets/submissions/code/484772601) |
+| [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays/problem) | `Sparse-Arrays/sparse_arrays.py` | Build a frequency map once, then answer queries by lookup. | O(n + q), expected | O(u + q): frequency map plus buffered output | [Accepted · 25 points](https://www.hackerrank.com/challenges/sparse-arrays/submissions/code/484773183) |
 
-The `n`/`q` symbols are the matrix dimension or input-string count and query count, as appropriate. Input/output costs are included in the estimates. The handout's stated O(n) target for Diagonal Difference counts diagonal arithmetic after input is available; reading all n² matrix values still takes O(n²).
+The `n`/`q` symbols are the matrix dimension or number of stored strings and query count, as appropriate; `u` is the number of unique strings. Input/output costs are included in the estimates. The handout's O(n) target for Diagonal Difference counts diagonal arithmetic after input is available; reading all n² matrix values still takes O(n²).
 
 ## Run locally
 
@@ -39,10 +39,10 @@ The following additional warm-up challenges were accepted while building toward 
 
 ## Evidence
 
-- `evidence/platform_notes.md` records the verified account, challenge URLs, and completion state.
+- `evidence/platform_notes.md` records the verified account, direct accepted-result URLs, scores, and badge status.
 - `evidence/hackerrank_profile_three_star.png` is a public-profile screenshot showing the three-star badge.
 - `Sparse-Arrays/Screenshot 2026-10-03 165310.png` is the pre-existing accepted Sparse Arrays screenshot in this repository.
-- Full-suite acceptance for all five required challenges was verified live in the authenticated HackerRank session. Individual local screenshot files for the other four accepted-result screens were not available to export in this run; capture and add those pages if the instructor strictly requires one separate screenshot per challenge.
+- Full-suite acceptance for all five required challenges was verified live in the authenticated session; the direct result links above open their HackerRank result records when signed in. Individual local screenshot files for the other four accepted-result screens were not available to export in this run; add them if the instructor requires one separate screenshot per challenge.
 
 ## Tests
 
